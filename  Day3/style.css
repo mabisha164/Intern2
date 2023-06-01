@@ -1,0 +1,155 @@
+
+*{
+ margin: 0;
+ padding: 0;
+}
+.container{
+    background-color: rgb(42, 42, 68);
+    
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    color: antiquewhite;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.listWrapper li{
+    list-style: none;
+}
+.listWrapper {
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    font: 20px;
+    gap:40px;
+    display: flex;
+    margin-right: 5px;
+    margin-top: 10px;
+
+}
+.loginContainer {
+    display: flex;
+    color:antiquewhite;
+    margin-right: 30px;
+    margin-left: 10px;
+    height: 50px;
+    
+}
+.section{
+    color:antiquewhite;
+    height: 300px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+     
+   
+}
+
+
+.section1 p{
+    font:10px;
+    margin-bottom: 15px;
+    color:rgb(224, 204, 224);
+
+
+}
+.section3 p{
+
+    color:aliceblue;
+    margin-top: 20px;
+}
+.section4 {
+  
+    display: flex;
+    gap:10px;
+    margin-top: 10px;
+   margin-bottom: 30px;
+   
+}
+.button{
+   
+   
+    border-radius: 6px;
+    background-color: rgb(109, 109, 186);
+    padding: 16px 16px;
+    
+   
+
+}
+.learnmore
+{
+    padding: 16px 16px;
+    display: flex;
+    border-radius: 6px;
+    background-color: white;
+    
+    color: black;
+
+}
+
+.section4 .learnmore{
+ background-color: bisque;
+ color: black;
+}
+.maincontainer{
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.box{
+    height:300px;
+    width: 300px;
+    background-color: rgb(233, 223, 223);
+    margin-right: 30px;
+}
+.box1{
+    height:300px;
+    width: 300px;
+    background-color: rgb(233, 223, 223);
+}
+.box2{
+    height:300px;
+    width: 300px;
+    background-color: rgb(233, 223, 223);
+    margin-left: 30px;
+}
+.box h2{
+  color:black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 15px;
+}
+.box1 h2{
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+  }
+.box2 h2{
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+}
+.box p
+{
+    font-size: medium;
+    margin-top: 15px;
+}
+.box1 p
+{
+    font-size: medium;
+    margin-top: 15px;
+}
+.box2 p
+{
+    font-size: medium;
+    margin-top: 15px;
+}
