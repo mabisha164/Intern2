@@ -1,50 +1,128 @@
 html,body{
     width:100%;
-    height:600px;
-    background-color: pink;
-    display: flex;
+    height:650px;
     justify-content: center;
     align-items: center;
+    
 }
 .container1{
     width:100%;
     height:100%;
     display: flex;
-    background-color: antiquewhite;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
-
-   
+    background-color: rgb(233, 157, 58);
+    margin-right: 20px;
 }
 .maincontainer{
-     background-color: green;
-     height: 80px;
-     width:300px;
+  display: flex;
+  margin-top: 70px;
+
+     
 
 }
 .box{
-    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
-    width:300px;
+
+    
 }
-
-
 .box1{
-    background-color: aquamarine;
-    height: 100px;
-    width:150px;
-    margin-top: 10px;
+    background-color: green;
+    height: 90px;
+    width:200px;
+    
 }
 .box2{
+    
     background-color: blue;
-    height: 100px;
-    width: 150px;
-    margin-left: 10px;
+    height: 70px;
+    width: 100px;
+    
     margin-top: 10px;
 }
+
+.box3{
+    
+    background-color: yellow;
+    height: 80px;
+    
+}
 .container2{
+   display: flex;
+   
+    
+    
+}
+.container2 .firstcont{
+    margin-left: 15px;
+    width:200px;
+    
+
+    
+}
+.container2 .secondcont{
+    width:250px;
+    margin-left:10px ;
+}
+.box3{
+    background-color: rgb(220, 83, 222);
+    height: 90px;
+    width:200px;
+    
+}
+.box4{
+    background-color: rgb(242, 117, 63);
+    height: 50px;
+    width:200px;
+    margin-top: 10px;
+}
+.box5{
+    background-color: blue;
+    height: 50px;
+    width:150px;
+    margin-bottom: 10px;
+   
+}
+.box6{
+    background-color: black;
+    height: 90px;
+    width:150px;
+}
+.container3{
+ width:100%;
+justify-content: center;
+align-items: center;
+display: flex;
+
+}
+.item1{
+ background-color: rgb(141, 215, 137);
+ height:80px;
+ width: 250px;
+ margin-right:10px ;
+ display: flex;
+ justify-content: center;
+}
+.item2{
+    background-color: rgb(244, 219, 77);
+    height: 80px;
+    width:380px;
     display: flex;
-    height:400px;
-    width:500px;
+}
+.lastcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.text{
+    display: flex;
+    justify-content: center; 
+    font-size: 100px;
+    color: black;
+    font-weight: 400px;
+    margin-top: 30px;
+    
 }
