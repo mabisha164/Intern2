@@ -1,4 +1,4 @@
-function Register(){
+async function Register(){
     let F_Name = document.getElementById("username").value;
     let L_Name = document.getElementById("username1").value;
     let Email = document.getElementById("e1").value;
@@ -12,25 +12,24 @@ function Register(){
         password:Password,
         e3:Confirm 
     };
-    fetch("https://rest-api-bjno.onrender.com/register",{
+    try{
+    const response =await fetch("https://rest-api-bjno.onrender.com/register",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
         },
        body:JSON.stringify(loginData)
-    })
-    .then(res => res.json())
-    .then (data=>{ 
-        console.log(data)
+    });
         if(data.success){
-            document.getElementById("message").textContent= "Login Successful!";
+            const data=await response.json();
+            
+            console.log(data);
         }
         else{
-            document.getElementById("message").textContent= "Failed Login";
+            console.log('Error:',response.status);
         }
-    })
-    .catch(error=>{
-        console.error("Error:",error);
-    })
-    
+    }catch(error){
+        console.log("Error:",error);
+    }
 }
+
