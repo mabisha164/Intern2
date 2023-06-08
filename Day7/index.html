@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,45 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
+     <div class="container1"></div>
         <div class="Form-box">
-            <h2>Register</h2>
+            <h1>Register</h1>
             <p>Create your account.It's free and only takes a minute.</p>
-            <div class="input-section" >
-                <input type="FirstName" placeholder="FirstName"id="username" input style="width:150px; height:30px; font-size:15px; margin-right: 10px;"  >
-                <input type="LastName" placeholder="LastName"id="username1" input style="width:150px; height:30px; font-size:15px;">
+            <div class="input-section">
+                <input type="FirstName" placeholder="FirstName" id="username" input
+                    style="width:150px; height:30px; font-size:15px; margin-right: 10px;">
+                <input type="LastName" placeholder="LastName" id="username1" input
+                    style="width:150px; height:30px; font-size:15px;">
             </div>
-            <br/>
-            <input type="email" placeholder="Email"id="e1"  input style="width:150px; height:30px; font-size:15px;">
-            <br/>
-            <br/>
-            <input type="password" placeholder="Password"id="e2" input style="width:175px; height:30px; font-size:15px;">
-            <br/>
-            <br/>
-            <input type="password"placeholder="Confirm Password" id="e3" input style="width:200px; height:30px; font-size:15px;">
-            <br/>
-            <br/>
-            <input type="checkbox"> I accept the <b>Terms of use & privacy policy</b>.<br/><br/>
-            <button type="button" onclick="Register()" style="color:rgb(221, 236, 221);background-color: green;width: 300px;height:60px;">Register Now</button>
-            
+            <br />
+            <input type="email" placeholder="Email" id="e1" input style="width:150px; height:30px; font-size:15px;">
+            <br />
+            <br />
+            <input type="password" placeholder="Password" id="e2" input
+                style="width:175px; height:30px; font-size:15px;">
+            <br />
+            <br />
+            <input type="password" placeholder="Confirm Password" id="e3" input
+                style="width:200px; height:30px; font-size:15px;">
+            <br />
+            <br />
+            <input type="checkbox"> I accept the <b>Terms of use & privacy policy</b>.<br /><br />
+             <button type="button" onclick="Register()"
+                style="color:rgb(221, 236, 221);background-color: green;width: 120px;height:50px;">Register Now</button>
+                <button type="button" type="button" onclick="Submit()"style="color:rgb(221, 236, 221);background-color: green;width: 120px;height:50px;">Click for list</button>
+                <div class="sign">
+                    Already have an acount? <br> <a href="#"><span> Sign up</span></a>
+                </div>
         </div>
+        <ul id="userList"></ul>
+     </div>
     </div>
-<script src="form.js"></script>
+
+
+    <script src="form.js"></script>
 </body>
+
 </html>
