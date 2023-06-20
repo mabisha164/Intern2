@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background: #bfbbc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #b5b0c0;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+} */
+/* .App{
+  text-align: center;
+ }
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6d795;
+  height:100vh;
+  width:100%;
+  
+}
+.Card {
+  width: 400px;
+  height:250px;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid rgb(129, 83, 129);
+  border-radius: 4px;
+  background-color: #bceaed;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+   display: flex; 
+}
+
+
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}  */
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+/* h1{
+  text-align: center;
+  font-family: cursive;
+} */
+
+.container1{
+  height: 100%;
+  width: 70%;
+  background-color:white;
+  margin-left: 150px;
+}
+.box
+{
+  height: 160px;
+  width:100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+ .img{
+  height: 50px;
+} 
+ .title h2{
+  margin-left: 50px;
+  padding-top: 20px;
+ }
+ 
+.title p{
+  height: 40px;
+  width:150px;
+  background-color: rgb(247, 241, 241);
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.price p{
+  height: 25px;
+  width: 40px;
+  background-color: rgb(193, 233, 193);
+  border-radius: 20px;
+  color:green;
+  font-size: 25px;
+  margin-left: 100px;
+   padding-bottom: 40px;
+  margin-top: 40px;
+ 
+}
+.price h4{
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.light-hr {
+  border: none; 
+  height: 0.5px; 
+  background-color: rgb(211, 209, 209); 
+  width: 100%;
+} 
