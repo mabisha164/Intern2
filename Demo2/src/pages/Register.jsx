@@ -113,6 +113,11 @@ const Register = (props) => {
         <header>
           <nav>
             <ul>
+              <li>
+                <Link to="/" style={{ color: "white" }}>
+                  Home
+                </Link>
+              </li>
               <li style={{ color: "black" }}>
                 <Link to="/register" style={{ color: "white" }}>
                   Register
@@ -127,6 +132,11 @@ const Register = (props) => {
               <li style={{ color: "black" }}>
                 <Link to="/user" style={{ color: "white" }}>
                   Users
+                </Link>
+              </li>
+              <li>
+                <Link to="/logout" style={{ color: "white" }}>
+                  Logout
                 </Link>
               </li>
             </ul>

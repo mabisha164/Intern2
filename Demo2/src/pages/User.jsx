@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useCurrentUser from "./useCurrentUser";
 
 function Users() {
   const [data, setData] = useState([]);
@@ -10,8 +11,17 @@ function Users() {
         setData(resp);
       });
     });
+    console.log(data);
   }, []);
-  console.log(data);
+
+  const { isAuth, id } = useCurrentUser();
+  if (!isAuth) {
+    return (
+      <p style={{ color: "green" }}>
+        <h1>login First!!</h1>
+      </p>
+    );
+  }
   return (
     <div className="list">
       <div className="names1">
@@ -23,6 +33,11 @@ function Users() {
         <nav>
           <ul>
             <li style={{ color: "black" }}>
+              <Link to="/" style={{ color: "white" }}>
+                Home
+              </Link>
+            </li>
+            <li style={{ color: "black" }}>
               <Link to="/register" style={{ color: "white" }}>
                 Register
               </Link>
@@ -33,9 +48,10 @@ function Users() {
                 Login
               </Link>
             </li>
+
             <li style={{ color: "black" }}>
-              <Link to="/users" style={{ color: "white" }}>
-                Users
+              <Link to="/logout" style={{ color: "white" }}>
+                Logout
               </Link>
             </li>
           </ul>

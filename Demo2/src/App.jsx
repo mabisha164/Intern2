@@ -5,7 +5,10 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Users from "./pages/User";
+import Logout from "./pages/Logout";
 import { Route, Routes } from "react-router-dom";
+import Profile from "./pages/Profile";
+// import useCurrentUser from "./pages/useCurrentUser";
 
 // import "./App.css";
 // import Login from "./Components/Login";
@@ -48,6 +51,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </>

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useCurrentUser from "./useCurrentUser";
 const Login = (props) => {
   const initalValues = { email: "", password: "" };
   const [formValues, setFormValues] = useState(initalValues);
   const [formError, setFormError] = useState({});
   const [submit, setSubmit] = useState(false);
+  const { getId } = useCurrentUser;
+  console.log(getId);
   // const [registeredData, setRegisteredData] = useState(null);
 
   function handleSubmit(e) {
@@ -54,6 +57,8 @@ const Login = (props) => {
     // .then((data) => {
     console.log(data);
     localStorage.setItem("message", data.message);
+    localStorage.setItem("id", data.data._id);
+    localStorage.setItem("email", data.data.email);
   };
   //     .catch((error) => {
   //       console.error(error);
@@ -71,19 +76,29 @@ const Login = (props) => {
             <nav>
               <ul>
                 <li style={{ color: "black" }}>
+                  <Link to="/" style={{ color: "white" }}>
+                    Home
+                  </Link>
+                </li>
+                <li style={{ color: "black" }}>
                   <Link to="/register" style={{ color: "white" }}>
                     Register
                   </Link>
                 </li>
                 <li style={{ color: "black" }}>
-                  <Link to="/login" style={{ color: "white" }}>
+                  <Link to="/profile" style={{ color: "white" }}>
                     {" "}
-                    Login
+                    Profile
                   </Link>
                 </li>
                 <li style={{ color: "black" }}>
                   <Link to="/users" style={{ color: "white" }}>
                     Users
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/logout" style={{ color: "white" }}>
+                    Logout
                   </Link>
                 </li>
               </ul>
@@ -145,6 +160,9 @@ const Login = (props) => {
                       {" "}
                       Sign Up
                     </button>
+                    {/* <button className="logout" onClick={handleLogout}>
+                      Logout
+                    </button> */}
                   </p>
                   {/* </div> */}
                 </div>

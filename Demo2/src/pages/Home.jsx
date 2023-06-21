@@ -22,8 +22,18 @@ const Home = () => {
               </Link>
             </li>
             <li style={{ color: "black" }}>
-              <Link to="/user" style={{ color: "white" }}>
+              <Link to="/users" style={{ color: "white" }}>
                 Users
+              </Link>
+            </li>
+            <li>
+              <Link to="/logout" style={{ color: "white" }}>
+                Logout
+              </Link>
+            </li>
+            <li>
+              <Link to="/profile" style={{ color: "white" }}>
+                Profile
               </Link>
             </li>
           </ul>
