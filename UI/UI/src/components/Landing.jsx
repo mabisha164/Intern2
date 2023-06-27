@@ -55,7 +55,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="flex-1 relative">
-              <div className="bg-gradient-to-t from-indigo-600 via-purple-300 to-purple-200 ... w-[330px] h-[700px] rounded-xl ml-56 "></div>
+              <div className="bg-gradient-to-t from-indigo-600 via-purple-300 to-purple-200 ... w-[330px] h-[700px] rounded-xl ml-56 translate-y[-100px]"></div>
               <div className=" mr-36 absolute top-0">
                 <img src={img1} className="" />
               </div>

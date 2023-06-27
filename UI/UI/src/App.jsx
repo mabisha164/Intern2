@@ -5,23 +5,19 @@ import About from "./components/About";
 import Contactus from "./components/Contactus";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "./components/Landing";
+import Signin from "./components/signin";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="bg-black w-full h-screen text-white">
+        <div className="bg-black w-full h-[180vh] text-white">
           <Navbar />
           <Routes>
             <Route path="/" element={<Landing />} />
-          </Routes>
-          <Routes>
+            <Route path="/signin" element={<Signin />} />
             <Route path="/home" element={<Home />} />
-          </Routes>
-          <Routes>
-            <Route path="/about" element={<About />} />
-          </Routes>
-          <Routes>
+            <Route path="/aboutus" element={<About />} />
             <Route path="/contactus" element={<Contactus />} />
           </Routes>
         </div>

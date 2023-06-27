@@ -4,31 +4,67 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="flex p-6 w-full justify-between relative">
-        <div className="text-4xl font-bold ml-20 ">
+      <div className="flex p-8 w-full  justify-between relative ">
+        <div className="text-4xl font-bold ml-20 hover:bg-white hover:text-black rounded-lg">
           <NavLink to="/">NDLE</NavLink>
         </div>
 
-        <div className="flex-1 ml-48 mt-2">
-          <ul className="flex gap-10 ">
-            <li>
-              <NavLink to="/home">Home</NavLink>
+        <div className="flex-1 ml-48 mt-2  ">
+          <ul className="flex gap-[120px] ">
+            <li className="  mr-[10px] ">
+              <NavLink
+                to="/home"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    textDecoration: isActive ? "underline" : "",
+                    color: isPending ? "red" : "white",
+                  };
+                }}
+              >
+                Home
+              </NavLink>
             </li>
 
-            <li>
-              <NavLink to="/aboutus">About Us</NavLink>
+            <li className=" mr-[10px">
+              <NavLink
+                to="/aboutus"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    textDecoration: isActive ? "underline" : "",
+                    color: isPending ? "red" : "white",
+                  };
+                }}
+              >
+                About Us
+              </NavLink>
             </li>
 
-            <li>
-              <NavLink to="/contactus">Contact Us</NavLink>
+            <li className=" mr-[10px">
+              <NavLink
+                to="/contactus"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    textDecoration: isActive ? "underline" : "",
+                    color: isPending ? "red" : "white",
+                  };
+                }}
+              >
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </div>
-
         <div className="flex ">
-          <button className="bg-white text-black p-2 w-20 rounded-2xl mr-72">
-            Sign in
-          </button>
+          <li>
+            <NavLink to="/signin">
+              <button className="bg-white text-black p-2 w-[100px] rounded-3xl mr-[230px] ">
+                Sign in
+              </button>
+            </NavLink>
+          </li>
         </div>
       </div>
     </>
