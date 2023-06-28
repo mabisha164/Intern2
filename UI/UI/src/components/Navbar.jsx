@@ -11,7 +11,7 @@ const Navbar = () => {
 
         <div className="flex-1 ml-48 mt-2  ">
           <ul className="flex gap-[120px] ">
-            <li className="  mr-[10px] ">
+            <li className="  mr-[10px] text-xl">
               <NavLink
                 to="/home"
                 style={({ isActive, isPending }) => {
@@ -26,7 +26,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className=" mr-[10px">
+            <li className=" mr-[10px] text-xl">
               <NavLink
                 to="/aboutus"
                 style={({ isActive, isPending }) => {
@@ -41,7 +41,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className=" mr-[10px">
+            <li className=" mr-[10px] text-xl">
               <NavLink
                 to="/contactus"
                 style={({ isActive, isPending }) => {
@@ -58,13 +58,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex ">
-          <li>
-            <NavLink to="/signin">
-              <button className="bg-white text-black p-2 w-[100px] rounded-3xl mr-[230px] ">
-                Sign in
-              </button>
-            </NavLink>
-          </li>
+          <NavLink to="/signin">
+            <button className="bg-white text-black p-2 w-[100px] rounded-3xl mr-[230px] ">
+              Sign in
+            </button>
+          </NavLink>
         </div>
       </div>
     </>

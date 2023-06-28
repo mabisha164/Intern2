@@ -11,7 +11,7 @@ import Services from "./services";
 import { FiSearch } from "react-icons/fi";
 import { LiaIdCardSolid } from "react-icons/lia";
 import { AiOutlineEye } from "react-icons/ai";
-
+// import Content from "./Content";
 import { BsFillCarFrontFill } from "react-icons/bs";
 import { PiExamBold } from "react-icons/pi";
 
@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-black h-screen w-full text-white ml-[140px]">
+      <div className="bg-black h-[120vh] w-full text-white ml-[140px]">
         <h1 className="text-4xl justify-between items-center mt-[30px]">
           Driving License Process
         </h1>
@@ -97,9 +97,16 @@ const Home = () => {
             {/* </div> */}
             <div className="  mt-10 bg-gradient-to-t from-purple-400 via-dark-300 to-indigo-400 gap-20 rounded-3xl  w-[1200px] h-[450px] ">
               <div className="flex justify-between mr-20">
-                <Services title="Liscense Data" icon={<FiSearch />} />
-                <Services title="Licene status " icon={<LiaIdCardSolid />} />
-                <Services title="Online Exam" icon={<RiTodoLine />} />
+                <Link to="/license">
+                  {" "}
+                  <Services title="Liscense Data" icon={<FiSearch />} />
+                </Link>
+                <Link to="/licensestatus">
+                  <Services title="Licene status " icon={<LiaIdCardSolid />} />
+                </Link>
+                <Link to="/online">
+                  <Services title="Online Exam" icon={<RiTodoLine />} />
+                </Link>
                 <Services title="Color Vision" icon={<AiOutlineEye />} />
               </div>
               <div className="flex justify-center gap-20 ">
